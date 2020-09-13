@@ -13,7 +13,6 @@ namespace ThreeMatchPazzle
         private static void Main()
         {
             CursorVisible = false;
-
             timer_.Elapsed += (_, e) =>
             {
                 timer_.Stop();

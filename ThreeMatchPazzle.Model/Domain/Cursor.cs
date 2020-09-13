@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ThreeMatchPazzle.Model.Domain
+﻿namespace ThreeMatchPazzle.Model.Domain
 {
     internal class Cursor
     {
@@ -28,11 +26,11 @@ namespace ThreeMatchPazzle.Model.Domain
                     break;
 
                 case Direction.Right:
-                    if (X < maxWidth_ - 1) X++;
+                    if (X <= maxWidth_) X++;
                     break;
 
                 case Direction.Down:
-                    if (Y < maxHeight_ - 1) Y++;
+                    if (Y <= maxHeight_) Y++;
                     break;
 
                 default:
