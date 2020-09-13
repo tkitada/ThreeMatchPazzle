@@ -26,11 +26,11 @@
                     break;
 
                 case Direction.Right:
-                    if (X <= maxWidth_) X++;
+                    if (X < maxWidth_ - 1) X++;
                     break;
 
                 case Direction.Down:
-                    if (Y <= maxHeight_) Y++;
+                    if (Y < maxHeight_ - 1) Y++;
                     break;
 
                 default:
